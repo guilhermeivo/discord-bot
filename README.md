@@ -52,7 +52,7 @@ $ git clone https://github.com/guilhermeivo/discord-bot.git
         <li>Renomeie o arquivo <code>.env_sample</code> para <code>.env</code>;</li>
         <li>Substitua o texto <code>YOUR_TONER_TOKEN</code> no arquivo .env pelo código da API.</li>
     </ul>
-    <li>Para registrar um bot no Discord, use o <a hrfe="https://discord.com/developers/applications/">painel da aplicação Discord</a>.</li>
+    <li>Para registrar um bot no Discord, use o <a href="https://discord.com/developers/applications/">painel da aplicação Discord</a>.</li>
 </ul>
 
 ### :computer: Rodando o projeto

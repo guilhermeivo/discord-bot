@@ -2,16 +2,6 @@
 
 🤖 Discord-bot - teste da API do Discord usando o Discord.js.
 
-# :scroll: Sumário
-
-- [Funcionalidades](#⚙️-Funcionalidades)
-- [Tecnologias](#computer-tecnologias)
-- [Como rodar o projeto](#construction_worker-como-rodar-o-projeto)
-    - [Baixando o projeto](#computer-baixando-o-projeto)
-    - [Configurando o projeto](#wrench-configurando-o-ambiente)
-    - [Rodando o projeto](#computer-rodando-o-projeto)
-        - [Projeto](#Projeto)
-
 ## ⚙️ Funcionalidades
 
 - [x] Eventos:

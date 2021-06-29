@@ -67,7 +67,7 @@ $ npm start
 - Arquitetura
   - `src/`
     - `commands/`
-        - `command`
+        - `command/`
             - `command.js`
     - `common/`
         - `common.js`

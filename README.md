@@ -10,8 +10,12 @@
     - [ ] guildMemberAdd
     - [ ] guildMemberRemove    
 - [X] Comandos:
-    - [X] gif
+    - [X] attachments
+    - [X] avatars
+    - [X] botapplication
+    - [X] embed
     - [X] help
+    - [X] ping
 
 # :computer: Tecnologias
 
@@ -36,11 +40,9 @@ $ git clone https://github.com/guilhermeivo/discord-bot.git
 
 <ul>
     <li>Para este projeto é necessário ter instalado em sua maquina o <a href="https://nodejs.org/en/">NodeJs</a>.</li>
-    <li>Crie uma conta no <a href="https://tenor.com/gifapi/documentation">Tenor</a>.</li>
     <ul>
         <li>Pegue o código da API;</li>
-        <li>Renomeie o arquivo <code>.env_sample</code> para <code>.env</code>;</li>
-        <li>Substitua o texto <code>YOUR_TONER_TOKEN</code> no arquivo .env pelo código da API.</li>
+        <li>Renomeie o arquivo <code>.env_.ample</code> para <code>.env</code>;</li>
     </ul>
     <li>Para registrar um bot no Discord, use o <a href="https://discord.com/developers/applications/">painel da aplicação Discord</a>.</li>
 </ul>
@@ -59,3 +61,19 @@ $ npm install
 # Executar aplicativo
 $ npm start
 ```
+
+# Arquitetura
+
+- Arquitetura
+  - `src/`
+    - `commands/`
+        - `command`
+            - `command.js`
+    - `common/`
+        - `common.js`
+    - `events/`
+        - `guildMemberAdd.js`
+        - `guildMemberRemove.js`
+        - `message.js`
+        - `ready.js`
+    - `index.js`

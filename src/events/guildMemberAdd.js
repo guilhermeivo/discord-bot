@@ -1,5 +1,7 @@
 'use strict'
 
-module.exports = async member => {
+const guildMemberAdd = (member => {
 
-}
+})()
+
+module.exports = guildMemberAdd

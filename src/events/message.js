@@ -1,21 +1,48 @@
 'use strict'
 
-const { prefix, commands } = require('../utils/utils.js')
-const help = require('../commands/help.js')
+const message = (() => {
 
-module.exports = ( client, message ) => {
-    if (message.channel.id === '798307487605981184') {
-        let tokens = message.content.split(' ')
+    let getAllCommands = async () => {
+        const fs = require('fs').promises
+
+        let requiresCommands = []
+
+        const folderName = 'commands'
+
+        const folders = await fs.readdir(`./src/${folderName}`)
+
+        for (const folder of folders) {
+            requiresCommands.push(
+                require(`../${folderName}/${folder}/${folder}.js`)
+            )
+        }
+
+        return requiresCommands
+    }
+
+    let callCommands = async (client, msg) => {
+        const { prefix } = require('../common/common.js')
+
+        let tokens = msg.content.split(' ')
         let command = tokens.shift()
-
+    
         if (command.charAt(0) === prefix) {
             command = command.substring(1)
+            
+            const listCommands = await getAllCommands()
 
-            if (commands[command]) {
-                commands[command].run(message, tokens)
-            } else if (command === 'help') {
-                help.run(message, tokens, client)
-            }
+            listCommands.forEach(current => {
+                if (command === current.help().usage) {
+                    current.send(msg, tokens)
+                }
+            })
         }
     }
-}
+    
+    return {
+        callCommands
+    }
+
+})()
+
+module.exports = message

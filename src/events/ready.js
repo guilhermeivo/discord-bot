@@ -1,5 +1,7 @@
 'use strict'
 
-module.exports = async client => {
-    console.log(`${client.user.username} ready!`)
-}
+const ready = (client => {  
+    console.log(`${client.user.tag} ready!`)
+})
+
+module.exports = ready

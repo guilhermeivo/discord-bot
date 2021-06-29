@@ -3,9 +3,11 @@
 const attachments = (() => {   
 
     let send = async (msg, args) => {
+        const { MessageAttachment } = require('discord.js')
+
         const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png')
         
-        message.channel.send(attachment)
+        msg.channel.send(attachment)
     }  
     
     let help = () => {

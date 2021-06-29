@@ -17,7 +17,7 @@
     - [X] help
     - [X] ping
 
-# :computer: Tecnologias
+## :computer: Tecnologias
 
 Este projeto foi realizado usando as seguintes tecnologias:
 
@@ -27,7 +27,7 @@ Este projeto foi realizado usando as seguintes tecnologias:
   <li><a href="https://discord.js.org/">Discord.js</a></li>
 </ul>
 
-# :construction_worker: Como rodar o projeto
+## :construction_worker: Como rodar o projeto
 
 ### :computer: Baixando o projeto
 
@@ -62,7 +62,7 @@ $ npm install
 $ npm start
 ```
 
-# Arquitetura
+## Arquitetura
 
 - Arquitetura
   - `src/`
